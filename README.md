@@ -1,3 +1,6 @@
+Absolutely — here is your **entire `README.md`** in one **single copy-paste block**, exactly as you'd upload it on GitHub, formatted and styled professionally:
+
+---
 
 # 🧠 Feature Discovery Assistant
 
@@ -153,16 +156,13 @@ tqdm
 
 ## 📬 Contact
 
-**Author**: Adityan Nambiar
-**Email**: adityannambiar9@gmail.com
-**LinkedIn**: linkedin.com/in/adityannambiar/
-**GitHub**:github.com/AdityanNambiar/
-
-
+**Author**: Your Name
+**Email**: [adityannambiar9@gmail.com](mailto:your.email@example.com)
+**LinkedIn**: [linkedin.com/in/adityannambiar](https://linkedin.com/in/adityannambiar)
+**GitHub**: [github.com/AdityanNambiar](https://github.com/AdityanNambiar)
 
 ---
 
 > ⭐ Star this repo if you found it useful, and feel free to fork or contribute!
 
 ---
-
