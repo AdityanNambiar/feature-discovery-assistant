@@ -1,0 +1,115 @@
+/* Global dark theme background */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  padding-top: 40px;
+  color: #eaeaea;
+}
+
+/* Container with dark tile gradient */
+.container {
+  background: linear-gradient(145deg, rgba(10, 20, 50, 0.9), rgba(15, 30, 60, 0.9));
+  max-width: 600px;
+  width: 90%;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #333;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Title styling */
+.title {
+  text-align: center;
+  margin-bottom: 16px;
+  color: #ffffff;
+}
+
+/* Chat area */
+.chatBox {
+  min-height: 300px;
+  max-height: 400px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  border: 1px solid #444;
+  border-radius: 6px;
+  background-color: #1a1a2e;
+}
+
+/* Placeholder message */
+.placeholder {
+  text-align: center;
+  color: #888;
+  font-style: italic;
+}
+
+/* Messages */
+.message {
+  padding: 10px;
+  border-radius: 8px;
+  max-width: 80%;
+  word-wrap: break-word;
+  color: #f0f0f0;
+}
+
+.message.user {
+  align-self: flex-end;
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: #fff;
+}
+
+.message.bot {
+  align-self: flex-start;
+  background-color: #2e2e3a;
+}
+
+/* Source label under bot messages */
+.source {
+  font-size: 0.8rem;
+  margin-top: 4px;
+  color: #ccc;
+}
+
+/* Typing status */
+.typingIndicator {
+  font-style: italic;
+  color: #aaa;
+}
+
+/* Input section */
+.inputBox {
+  display: flex;
+  margin-top: 10px;
+}
+
+.input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #444;
+  font-size: 16px;
+  background-color: #2c2c3c;
+  color: #eaeaea;
+}
+
+.input::placeholder {
+  color: #aaa;
+}
+
+.button {
+  margin-left: 10px;
+  padding: 10px 16px;
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
