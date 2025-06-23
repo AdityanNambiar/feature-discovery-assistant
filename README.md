@@ -1,6 +1,3 @@
-Absolutely — here is your **entire `README.md`** in one **single copy-paste block**, exactly as you'd upload it on GitHub, formatted and styled professionally:
-
----
 
 # 🧠 Feature Discovery Assistant
 
