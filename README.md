@@ -69,6 +69,7 @@ cd backend
 python -m venv venv
 source venv/bin/activate        # Windows: venv\Scripts\activate
 pip install -r requirements.txt
+python generate_index.py
 cp .env.example .env            # Add your API key here
 uvicorn main:app --reload
 
