@@ -32,7 +32,7 @@ A full-stack intelligent assistant built with **React**, **FastAPI**, and **GPT-
 
 ## 📁 Folder Structure
 
-
+```
 feature-discovery-assistant/
 │
 ├── backend/
@@ -49,7 +49,7 @@ feature-discovery-assistant/
 │   └── public/
 │
 └── README.md                # You're here!
-
+```
 
 ---
 
@@ -63,7 +63,7 @@ cd feature-discovery-assistant
 
 
 ### 2. Backend Setup
-
+```
 bash
 cd backend
 python -m venv venv
@@ -72,15 +72,15 @@ pip install -r requirements.txt
 python generate_index.py
 cp .env.example .env            # Add your API key here
 uvicorn main:app --reload
-
+```
 
 ### 3. Frontend Setup
-
+```
 bash
 cd frontend
 npm install
 npm start
-
+```
 
 ---
 
