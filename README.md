@@ -1,3 +1,4 @@
+
 # 🧠 Feature Discovery Assistant
 
 A full-stack intelligent assistant built with **React**, **FastAPI**, and **GPT-3.5**, enabling users to query product features using natural language. The system uses vector similarity search for known features and seamlessly falls back to GPT when unfamiliar queries are asked — just like a real AI product assistant.
@@ -57,14 +58,14 @@ feature-discovery-assistant/
 
 ### 1. Clone the Repository
 
-bash
+```bash
 git clone https://github.com/yourusername/feature-discovery-assistant.git
 cd feature-discovery-assistant
-
+```
 
 ### 2. Backend Setup
-```
-bash
+
+```bash
 cd backend
 python -m venv venv
 source venv/bin/activate        # Windows: venv\Scripts\activate
@@ -75,8 +76,8 @@ uvicorn main:app --reload
 ```
 
 ### 3. Frontend Setup
-```
-bash
+
+```bash
 cd frontend
 npm install
 npm start
@@ -86,11 +87,11 @@ npm start
 
 ## 🔐 Environment Variables
 
-In the backend/ directory, create a .env file with this key:
+In the `backend/` directory, create a `.env` file with this key:
 
-
+```
 OPENROUTER_API_KEY=sk-or-your-key-here
-
+```
 
 **Do not share your `.env` file publicly.** Use `.env.example` to show the required format.
 
@@ -134,7 +135,7 @@ It’s a great fit for internships or roles involving LLMs, agents, and product 
 
 ## 📦 Requirements
 
-
+```
 # requirements.txt
 
 fastapi
@@ -146,7 +147,7 @@ huggingface_hub
 python-dotenv
 pydantic
 tqdm
-
+```
 
 ---
 
@@ -154,8 +155,10 @@ tqdm
 
 **Author**: Adityan Nambiar
 **Email**: adityannambiar9@gmail.com
-**LinkedIn**:- linkedin.com/in/adityannambiar/
-**GitHub**: github.com/AdityanNambiar/
+**LinkedIn**: linkedin.com/in/adityannambiar/
+**GitHub**:github.com/AdityanNambiar/
+
+
 
 ---
 
