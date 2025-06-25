@@ -8,14 +8,11 @@ from transformers import pipeline
 from dotenv import load_dotenv
 import os
 
-# Load env variables
 load_dotenv()
 
-# Load vectorstore from disk
 embedding = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
 vectorstore = Chroma(persist_directory="chromadb_store", embedding_function=embedding)
 
-# Choose your LLM (use OpenAI if you get credits, or HF fallback)
 use_openai = False
 
 if use_openai:
@@ -27,13 +24,11 @@ else:
     llm = HuggingFacePipeline(pipeline=pipe)
 
 
-# Build QA chain
 qa = RetrievalQA.from_chain_type(
     llm=llm,
     retriever=vectorstore.as_retriever()
 )
 
-# Ask a question
 while True:
     query = input("\nAsk a question about your product features (or type 'exit'): ")
     if query.lower() == "exit":
