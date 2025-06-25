@@ -7,7 +7,6 @@ from langchain.embeddings import HuggingFaceEmbeddings
 from dotenv import load_dotenv
 from openai import OpenAI
 
-# Load environment variables
 load_dotenv()
 api_key = os.getenv("OPENROUTER_API_KEY")
 
@@ -25,11 +24,9 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# Data model
 class Query(BaseModel):
     question: str
 
-# Vector DB setup
 embedding = HuggingFaceEmbeddings()
 db = Chroma(persist_directory="./chroma_db", embedding_function=embedding)
 retriever = db.as_retriever(search_kwargs={"k": 5})
@@ -64,7 +61,6 @@ Answer:"""
             }
 
         else:
-            # Fallback to general GPT if no relevant docs found
             fallback_prompt = f"""You are a helpful AI assistant. Answer the following question even if it’s unrelated to product features.
 
 Question: {query.question}
